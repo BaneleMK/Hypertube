@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<title></title>
+</head>
+<body>
+
+<div id="demo">
+	<a href="#" onclick="sendobj()">Here, I just clicked a movie</a>	
+</div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+	console.log('Hello');
+	var obj = { id: 10461,
+    url: 'https://yts.am/movie/2101-2014',
+    imdb_code: 'tt3004572',
+    title: '2101',
+    title_english: '2101',
+    title_long: '2101 (2014)',
+    slug: '2101-2014',
+    year: 2014,
+    rating: 2.7,
+    runtime: 56,
+    genres: [ 'Action', 'Adventure', 'Sci-Fi' ],
+    summary:
+     'Three friends exploring an abandoned facility discover a device that holds information about the future. Upon finding the device, they must learn how to use it while also striving to keep it out of the wrong hands.',
+    description_full:
+     'Three friends exploring an abandoned facility discover a device that holds information about the future. Upon finding the device, they must learn how to use it while also striving to keep it out of the wrong hands.',
+    synopsis:
+     'Three friends exploring an abandoned facility discover a device that holds information about the future. Upon finding the device, they must learn how to use it while also striving to keep it out of the wrong hands.',
+    yt_trailer_code: 'B2EYtaTVR2M',
+    language: 'English',
+    mpa_rating: '',
+    background_image:
+     'https://yts.am/assets/images/movies/2101_2014/background.jpg',
+    background_image_original:
+     'https://yts.am/assets/images/movies/2101_2014/background.jpg',
+    small_cover_image:
+     'https://yts.am/assets/images/movies/2101_2014/small-cover.jpg',
+    medium_cover_image:
+     'https://yts.am/assets/images/movies/2101_2014/medium-cover.jpg',
+    large_cover_image:
+     'https://yts.am/assets/images/movies/2101_2014/large-cover.jpg',
+    state: 'ok',
+    torrents: [ [Object], [Object] ],
+    date_uploaded: '2019-01-09 15:14:19',
+    date_uploaded_unix: 1547043259 };
+
+    console.log(obj);
+
+function sendobj() {
+	window.open("http://localhost:80/hypertube/info.php?obj=" +JSON.stringify(obj));
+}
+
+</script>
